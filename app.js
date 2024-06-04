@@ -50,4 +50,5 @@ reset.addEventListener("click",()=>{
     let newMinutes = (minutes < 10) ? `0${minutes}` : `${minutes}`;
     let newHours = (hours < 10) ? `0${hours}` : `${hours}`;
     timer.textContent = `${newHours}: ${newMinutes}: ${newSeconds}`;
+    clearInterval(info);
 })
