@@ -1,0 +1,96 @@
+/* Reset some default browser styles */
+body, h1, p, div, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+/* Container for the stopwatch */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Style the timer display */
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Style the buttons */
+button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Specific styles for each button */
+#start {
+    background-color: #28a745;
+    color: white;
+}
+
+#start:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#stop {
+    background-color: #dc3545;
+    color: white;
+}
+
+#stop:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reset {
+    background-color: #ffc107;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .timer {
+        font-size: 3rem;
+        padding: 15px 0;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 10px 18px;
+        margin: 8px 4px;
+    }
+}
